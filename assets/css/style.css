@@ -206,6 +206,11 @@ select {
 .color-picker{
     cursor: pointer;
 }
+.size-button:hover{
+    background-color: green;
+    color: white;
+}
+
 
 
 @media (max-width:576px) {
