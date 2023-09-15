@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    /* font-size */
+    --fs-10: 10px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24:24px;
+    --fs-25: 25px;
+    --fs-30: 30px;
+
+    /* color */
+    --black: #000000;
+    --light-black: #454729;
+    --davy-grey: #555;
+    --gray-99: #999999;
+    --gray9: #171717;
+    --dark-gray: #222;
+    --dark-green: #28A745;
+    --sky: #007BFF;
+    --m-black: #0D0D0D;
+    --black-op7:#4D4D4D;
+    --white-op6: #9E9E9E;
+    --white-op7: #B6B6B6;
+
+}
+
+.ff-roboto {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.ff-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ff-josphins {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.davy-gray {
+    color: var(--davy-grey);
+}
+
+.white-op6 {
+    color: var(--white-op6);
+}
+.black-op7{
+    color: var(--black-op7);
+}
+.white-op7 {
+    color: var(--white-op7);
+}
+
+.bg-gray9 {
+    background-color: var(--gray9);
+}
+
+.bg-m-black {
+    background-color: var(--m-black);
+}
+
+.dark-gray {
+    color: var(--dark-gray);
+}
+
+.light-black {
+    color: var(--light-black);
+}
+
+.sky-text {
+    color: var(--sky);
+}
+
+.gray-99 {
+    color: var(--gray-99);
+}
+
+.bg-green {
+    background-color: var(--dark-green);
+}
+.fs-10{
+    font-size: var(--fs-10);
+}
+.fs-16{
+    font-size: var(--fs-16);
+}
+.fs-18 {
+    font-size: var(--fs-18);
+}
+
+.fs-20 {
+    font-size: var(--fs-20);
+}
+.fs-24{
+    font-size: var(--fs-24);
+}
+.fs-25 {
+    font-size: var(--fs-25);
+}
+
+.fs-30 {
+    font-size: var(--fs-30);
+}
+
+@media (min-width:320px) and (max-width:576px) {
+    :root {
+        --fs-16:14px;
+        --fs-18:14px;
+        --fs-20: 14px;
+        --fs-30: 24px;
+        --fs-25:18px;
+        --fs-24:16px;
+    }
+
+    .Add-cart {
+        padding: 10px 25px !important;
+    }
+    .size-button{
+        padding: 8px 20px !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    :root {
+        --fs-20: 16px;
+        --fs-30: 24px;
+    }
+
+    .size-button {
+        padding: 8px 24px !important;
+    }
+        .best-price-button {
+            padding: 4px 4px;
+        }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .size-button {
+        padding: 8px 24px !important;
+    }
+}

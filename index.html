@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SNIKERS-PLTS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="advertisement ">
+            <div class="container d-none d-lg-flex  justify-content-between py-3">
+                <div>
+                    <img src="./assets/images/logo.png" alt="logo" class="w-100">
+                </div>
+                <div>
+                    <img src="./assets/images/advertisement-img.png" alt="advertisement-img" class="w-100">
+                </div>
+            </div>
+        </div>
+        <nav class="nav-section">
+            <div
+                class="container py-2 py-lg-3  text-end  d-flex justify-content-between justify-content-lg-end align-items-center">
+                <div class="logo d-lg-none">
+                    <img src="./assets/images/logo.png" alt="logo" class="w-100 logo">
+                </div>
+                <ul id="navbar"
+                    class="d-flex justify-content-lg-between gap-lg-3 px-0 py-2 nav-ul align-items-center mb-0">
+                    <li><a href="" class="text-black ff-roboto fs-18 fw-normal nav-links">HOME</a></li>
+                    <li><a href="" class="text-black ff-roboto fs-18 fw-normal nav-links">SNEAKERS KOPEN</a></li>
+                    <li><a href="" class="text-black ff-roboto fs-18 fw-normal nav-links">INTERVIEWS</a></li>
+                    <li><a href="" class="text-black ff-roboto fs-18 fw-normal nav-links">SALE</a></li>
+                    <li><a href="" class="text-black ff-roboto fs-18 fw-normal nav-links">SNEAKER VAN DE DAG</a>
+                    </li>
+                    <li><a href="" class="text-black ff-roboto fs-18 fw-normal nav-links">SNEAKER FORUM</a></li>
+                    <li><a href="" class="text-black ff-roboto fs-18 fw-normal nav-links">BLOG</a></li>
+                </ul>
+                <label onclick="opennav()" class="z-1 d-lg-none" id="menu">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </label>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container py-xxl-5 my-4">
+                <div class="row align-items-center">
+                    <div class="col-xxl-6 pe-xxl-30 mb-4 mb-xxl-0 text-center">
+                        <img src="./assets/images/hero-section-img.png" alt="sneaker-img"
+                            class="wx_sm-100  w-sm-75 w-lg-85 w-xxl-100">
+                        <div class="d-flex responsive  justify-content-center w-100 gap-4 mt-4 pt-1">
+                            <div class="mx-12">
+                                <img src="./assets/images/hero-sub-img1.png" alt="shoes-img" class="w-100">
+                            </div>
+                            <div class="mx-12">
+                                <img src="./assets/images/hero-sub-img2.png" alt="shoes-img" class="w-100">
+                            </div>
+                            <div class="mx-12">
+                                <img src="./assets/images/hero-sub-img3.png" alt="shoes-img" class="w-100">
+                            </div>
+                            <div class="mx-12">
+                                <img src="./assets/images/hero-sub-img4.png" alt="shoes-img" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 ps-xxl-30">
+                        <p class="text-black ff-poppins fs-30 fw-semibold">PREMIUM MENS SPORTS LATHER KEDS</p>
+                        <div class="d-flex align-items-center mb-4 pb-2">
+                            <img src="./assets/images/svg/stars.svg" alt="rating-stars">
+                            <p class="fw-normal fs-20 ff-poppins opacity-75 text-black mb-0">( 5 Customer Review )
+                            </p>
+                        </div>
+                        <p class="text-line-height mb-0 fw-normal fs-20 ff-poppins opacity-75 text-black mb-xxl-5 pb-4">
+                            Sed
+                            nec
+                            ultricies felis, vitae facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis,
+                            lobortis sapien. Sed
+                            imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget congue neque, mattis
+                            finibus neque. In vel dolor ac
+                            augue pretium
+                        </p>
+                        <div class="d-flex align-items-center gap-3  mb-3 pb-1 pt-xxl-3">
+                            <p class="mb-0 me-1 fs-20 fw-medium ff-poppins text-black">Qty:</p>
+                            <div class="q-box d-flex align-items-center justify-content-center gap-3">
+                                <p class="mb-0 fs-20 fw-normal ff-josphins davy-gray" id="decre">-</p>
+                                <p class="mb-0 fs-20 fw-normal ff-josphins davy-gray" id="value">0</p>
+                                <p class="mb-0 fs-20 fw-normal ff-josphins davy-gray" id="incre">+</p>
+                            </div>
+                            <button class="Add-cart bg-green text-white fs-20 fw-medium ff-poppins">Add to
+                                Cart</button>
+                        </div>
+                        <div class="d-flex align-items-center py-1 my-3">
+                            <label class=" fs-20 ff-poppins fw-medium  text-black"> Size:</label>
+                            <select class="ms-3 py-2  
+                                ">
+                                <option value="">s</option>
+                                <option value="">m</option>
+                                <option value="">l</option>
+                                <option value="">xl</option>
+                                <option value="">xxl</option>
+                            </select>
+                        </div>
+                        <div class="color-selection d-flex align-items-center gap-4">
+                            <p class="fs-20 fw-medium ff-poppins text-black mb-0">Color:</p>
+                            <div class="d-flex gap-1">
+                                <img src="./assets/images/svg/color-1.svg" alt="color-1" class="color-picker">
+                                <img src="./assets/images/svg/color-2.svg" alt="color-2" class="color-picker">
+                                <img src="./assets/images/svg/color-3.svg" alt="color-3" class="color-picker">
+                                <img src="./assets/images/svg/color-4.svg" alt="color-4" class="color-picker">
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 mt-4 pb-2">
+                            <div class="d-flex">
+                                <img src="./assets/images/svg/compare.svg" alt="compare-icon">
+                                <p class="dark-gray fw-light  fs-16 ff-poppins mb-0">Compare</p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="./assets/images/svg/wishlist.svg" alt="whislist-icon">
+                                <p class="dark-gray fw-light  fs-16 ff-poppins mb-0">Wishlist</p>
+                            </div>
+                        </div>
+                        <hr class="col-line my-2 my-xxl-4">
+                        <div class="col-icons d-flex gap-4 pt-2">
+                            <img src="./assets/images/svg/share-icon.svg" alt="share-icon">
+                            <img src="./assets/images/svg/fb-icon.svg" alt="fb-icon">
+                            <img src="./assets/images/svg/twitter-icon.svg" alt="twitter-icon">
+                            <img src="./assets/images/svg/pintrest-icon.svg" alt="pintrest-icon">
+                            <img src="./assets/images/svg/google-icon.svg" alt="google-icon">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main my-4 my-xxl-5">
+        <div class="container">
+            <p class="mb-lg-4 mb-3 ff-poppins fw-medium fs-25 text-black">You can buy the Nike Air Max 97 Men's Shoe - White
+                here:</p>
+            <div class="row justify-content-center">
+                <div class="col-xxl-3 col-lg-4 col-sm-6 col-10 mb-4">
+                    <div class="card-box">
+                        <div class="img-box">
+                            <img src="./assets/images/card-img1.png" alt="img" class="w-100">
+                        </div>
+                        <div class="rem-box">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="mb-0 ff-poppins fw-normal fs-16 text-black pe-3">Price:</p>
+                                    <p class="mb-0 ff-poppins fw-semibold text-black fs-20">€179,99</p>
+                                </div>
+                                <button class="best-price-button bg-green fs-10 fw-normal ff-poppins text-white">Best
+                                    Price</button>
+                            </div>
+                            <p class="text-black opacity-80 fs-16 fw-normal ff-poppins">Size:</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="size-button fw-normal fs-16 ff-poppins">41</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">42</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">43</button>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <button class="size-button fw-normal fs-16 ff-poppins">44</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">45</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">46</button>
+                            </div>
+                            <p class="view-text fs-16 ff-poppins fw-normal light-black mt-3">View this product as:</p>
+                            <p class="sky-text ff-poppins fs-16 fw-semibold">Foot Locker NL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-sm-6 col-10  mb-4">
+                    <div class="card-box">
+                        <div class="img-box">
+                            <img src="./assets/images/card-img2.png" alt="img" class="w-100">
+                        </div>
+                        <div class="rem-box">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="mb-0 ff-poppins fw-normal fs-16 text-black pe-3">Price:</p>
+                                    <p class="mb-0 ff-poppins fw-semibold text-black fs-20">€179,99</p>
+                                </div>
+                                <button class="best-price-button bg-green fs-10 fw-normal ff-poppins text-white">Best
+                                    Price</button>
+                            </div>
+                            <p class="text-black opacity-80 fs-16 fw-normal ff-poppins">Size:</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="size-button fw-normal fs-16 ff-poppins">41</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">42</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">43</button>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <button class="size-button fw-normal fs-16 ff-poppins">44</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">45</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">46</button>
+                            </div>
+                            <p class="view-text fs-16 ff-poppins fw-normal light-black mt-3">View this product as:</p>
+                            <p class="sky-text ff-poppins fs-16 fw-semibold">Foot Locker NL</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-sm-6 col-10 mb-4">
+                    <div class="card-box">
+                        <div class="img-box">
+                            <img src="./assets/images/card-img1.png" alt="img" class="w-100">
+                        </div>
+                        <div class="rem-box">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="mb-0 ff-poppins fw-normal fs-16 text-black pe-3">Price:</p>
+                                    <p class="mb-0 ff-poppins fw-semibold text-black fs-20">€179,99</p>
+                                </div>
+                                <button class="best-price-button bg-green fs-10 fw-normal ff-poppins text-white">Best
+                                    Price</button>
+                            </div>
+                            <p class="text-black opacity-80 fs-16 fw-normal ff-poppins">Size:</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="size-button fw-normal fs-16 ff-poppins">41</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">42</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">43</button>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <button class="size-button fw-normal fs-16 ff-poppins">44</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">45</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">46</button>
+                            </div>
+                            <p class="view-text fs-16 ff-poppins fw-normal light-black mt-3">View this product as:</p>
+                            <p class="sky-text ff-poppins fs-16 fw-semibold">Foot Locker NL</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-sm-6  col-10">
+                    <div class="card-box">
+                        <div class="img-box">
+                            <img src="./assets/images/card-img2.png" alt="img" class="w-100">
+                        </div>
+                        <div class="rem-box">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="mb-0 ff-poppins fw-normal fs-16 text-black pe-3">Price:</p>
+                                    <p class="mb-0 ff-poppins fw-semibold text-black fs-20">€179,99</p>
+                                </div>
+                                <button class="best-price-button bg-green fs-10 fw-normal ff-poppins text-white">Best
+                                    Price</button>
+                            </div>
+                            <p class="text-black opacity-80 fs-16 fw-normal ff-poppins">Size:</p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="size-button fw-normal fs-16 ff-poppins">41</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">42</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">43</button>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <button class="size-button fw-normal fs-16 ff-poppins">44</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">45</button>
+                                <button class="size-button fw-normal fs-16 ff-poppins">46</button>
+                            </div>
+                            <p class="view-text fs-16 ff-poppins fw-normal light-black mt-3">View this product as:</p>
+                            <p class="sky-text ff-poppins fs-16 fw-semibold">Foot Locker NL</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tabs my-4 my-xxl-5 py-xxl-4">
+        <div class="container">
+            <ul class="d-flex gap-4 ps-0 mb-0 mb-xxl-3  nav-pills" id="pills-tab" role="tablist">
+                <li class="me-xxl-5 " role="presentation">
+                    <p class="tab position-relative fs-20 ff-poppins fw-normal text-black active" id="pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                        aria-selected="true">
+                        DESCRIPTION</p>
+                </li>
+                <li class="me-xxl-4" role="presentation">
+                    <p class="tab position-relative fs-20 ff-poppins fw-normal text-black" id="pills-profile-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">
+                        ADDITIONAL INFORMATION</p>
+                </li>
+                <li role="presentation">
+                    <p class="tab position-relative fs-20 ff-poppins fw-normal text-black" id="pills-contact-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-contact" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">
+                        REVIEWS (1)</p>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <p class="mb-0 ff-poppins fs-20 fw-normal black-op7 ">Sed nec ultricies felis, vitae facilisis ipsum. Morbi id
+                        turpis euismod,
+                        rhoncus
+                        tortor quis,
+                        lobortis sapien. Sed
+                        imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget congue neque, mattis finibus
+                        neque. In vel dolor ac
+                        augue pretium suscipit. Ut nec massa in ligula vestibulum mattis. Suspendisse imperdiet lorem
+                        eleifend nisi euismod, vel
+                        consequat ipsum luctus. Morbi auctor vulputate hendrerit. Etiam vel lectus tortor. Pellentesque
+                        non pharetra mi. Cura
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <p class="mb-0 ff-poppins fs-20 fw-normal  black-op7"> Sed eget congue neque, mattis finibus neque. In vel
+                        dolor ac
+                        augue pretium suscipit. Sed imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget
+                        congue neque, mattis finibus
+                        neque. In vel dolor ac
+                        augue pretium suscipit. Ut nec massa in ligula vestibulum mattis. Suspendisse imperdiet lorem
+                        eleifend nisi euismod, vel
+                        consequat ipsum luctus. Morbi auctor vulputate hendrerit. Etiam vel lectus tortor. Pellentesque
+                        non
+                        pharetra mi. Cura
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <p class="mb-0 ff-poppins fs-20 fw-normal black-op7"> Sed nec ultricies felis, vitae facilisis ipsum. Morbi
+                        id turpis euismod, rhoncus tortor quis,
+                        lobortis sapien. Sed
+                        imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget congue neque, mattis finibus
+                        neque. In vel dolor ac
+                        augue pretium suscipit. Ut nec massa in ligula vestibulum mattis. Suspendisse imperdiet lorem
+                        eleifend nisi euismod, vel
+                        consequat ipsum luctus. Morbi auctor vulputate hendrerit. Etiam vel lectus tortor. Pellentesque
+                        non
+                        pharetra mi. Cura
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products my-4 my-xxl-5">
+        <div class="container">
+            <h2 class="fs-30 ff-poppins fw-semibold text-black mb-xxl-4 pb-xxl-2 mb-3">RELATED PRODUCT</h2>
+            <div class="row responsive2">
+                <div class="col-3 mx-12 mb-4">
+                    <div class="product-card">
+                        <img src="./assets/images/red-shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-12 mb-4">
+                    <div class="product-card">
+                        <img src="./assets/images/grey_shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-12 mb-4">
+                    <div class="product-card">
+                        <img src="./assets/images/red-shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-12 mb-4">
+                    <div class="product-card">
+                        <img src="./assets/images/grey_shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row responsive3 d-none d-lg-block   " dir="rtl">
+                <div class="col-3 mx-12" dir="ltr">
+                    <div class="product-card">
+                        <img src="./assets/images/red-shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-12" dir="ltr">
+                    <div class="product-card">
+                        <img src="./assets/images/grey_shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-12" dir="ltr">
+                    <div class="product-card">
+                        <img src="./assets/images/red-shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-12" dir="ltr">
+                    <div class="product-card">
+                        <img src="./assets/images/grey_shoes.png" alt="products" class="img-rad w-100">
+                        <div class="d-flex align-items-center justify-content-between py-3 px-3">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 fs-18 fw-medium ff-poppins davy-gray">Quickiins Mens Shoes</p>
+                                <div class="d-flex gap-1">
+                                    <p class="mb-0 gray-99 fs-18 fw-medium ff-poppins">
+                                        $90.00
+                                    </p>
+                                    <p class="mb-0 text-danger fs-18 fw-medium ff-poppins">
+                                        $70.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/cart-icon.svg" alt="cart-icon" class="w-100">
+                            </div>
+                        </div>
+                        <div class="ps-3">
+                            <img src="./assets/images/svg/blank-stars.svg" alt="rating-stars">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end gap-2 my-5 align-items-center">
+                <button class="page-change fs-24 fw-semibold ff-poppins black-op7">1</button>
+                <button class="page-change fs-24 fw-semibold ff-poppins black-op7">2</button>
+                <button class="page-change fs-24 fw-semibold ff-poppins black-op7">3</button>
+                <button class="next-btn fs-16 ms-2 ff-poppins fw-normal davy-gray">Next >></button>
+
+            </div>
+        </div>
+    </section>
+    <footer class="bg-m-black">
+        <div class="container py-4 mb-xxl-5">
+            <div class="footer-logo">
+                <a href="#"><img src="./assets/images/footer-logo.png" alt="footer-logo" class="w-100"></a>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-xxl-4 mb-4 mb-xxl-0">
+                    <p class="white-op6 text-line-height  fs-16 ff-poppins fw-normal">Sed nec ultricies felis, vitae
+                        facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis,
+                        lobortis sapien. Sed
+                        imperdiet nulla in leo ullamcorper, in finibus elit porta.
+                    </p>
+                    <div>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.897461 15.4679C0.897461 22.6714 6.12925 28.6614 12.9717 29.8761V19.4113H9.34946V15.387H12.9717V12.1668C12.9717 8.54447 15.3057 6.53289 18.6068 6.53289C19.6524 6.53289 20.7802 6.69348 21.8258 6.85407V10.5573H19.9748C18.2035 10.5573 17.8015 11.4423 17.8015 12.57V15.387H21.6652L21.0217 19.4113H17.8015V29.8761C24.6439 28.6614 29.8757 22.6726 29.8757 15.4679C29.8757 7.45416 23.3556 0.897827 15.3866 0.897827C7.41757 0.897827 0.897461 7.45416 0.897461 15.4679Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path
+                                d="M18.1609 2.17334C9.75942 2.17334 2.94727 8.9855 2.94727 17.3869C2.94727 25.7884 9.75942 32.6005 18.1609 32.6005C26.5623 32.6005 33.3745 25.7884 33.3745 17.3869C33.3745 8.9855 26.5623 2.17334 18.1609 2.17334ZM25.4722 13.6413C25.4824 13.8009 25.4824 13.9673 25.4824 14.1303C25.4824 19.1154 21.6858 24.8579 14.748 24.8579C12.6086 24.8579 10.6254 24.2364 8.9546 23.1667C9.26023 23.2007 9.55227 23.2143 9.8647 23.2143C11.6306 23.2143 13.2538 22.6166 14.5476 21.6046C12.8904 21.5707 11.4981 20.484 11.0227 18.9898C11.6034 19.0747 12.1264 19.0747 12.724 18.9219C11.8707 18.7485 11.1038 18.2851 10.5534 17.6103C10.0031 16.9356 9.70335 16.0911 9.70509 15.2204V15.1728C10.2043 15.4547 10.7918 15.6279 11.4064 15.6516C10.8897 15.3073 10.466 14.8407 10.1727 14.2934C9.87952 13.746 9.72588 13.1348 9.72546 12.5138C9.72546 11.8109 9.90884 11.1691 10.2382 10.6121C11.1854 11.7781 12.3672 12.7316 13.707 13.4109C15.0468 14.0902 16.5146 14.4799 18.0148 14.5548C17.4817 11.9909 19.397 9.91597 21.6994 9.91597C22.7861 9.91597 23.7641 10.371 24.4534 11.1045C25.3058 10.9449 26.1208 10.6257 26.8475 10.1978C26.5657 11.0706 25.9748 11.8075 25.1904 12.2727C25.951 12.1912 26.6845 11.9807 27.3637 11.6852C26.8509 12.4391 26.2091 13.1081 25.4722 13.6413Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <path
+                                d="M17.9353 2.17334C9.53384 2.17334 2.72168 8.9855 2.72168 17.3869C2.72168 25.7884 9.53384 32.6005 17.9353 32.6005C26.3367 32.6005 33.1489 25.7884 33.1489 17.3869C33.1489 8.9855 26.3367 2.17334 17.9353 2.17334ZM19.1748 21.1496C17.684 23.2482 14.6888 23.8595 12.3524 22.9596C10.0093 22.0665 8.34528 19.5909 8.54563 17.0677C8.59657 13.9809 11.4389 11.2743 14.5258 11.3796C16.0064 11.3117 17.3987 11.9535 18.5329 12.8602C18.0473 13.4103 17.5481 13.9401 17.0116 14.4325C15.6498 13.4918 13.7108 13.2236 12.349 14.3103C10.3998 15.6584 10.3115 18.8404 12.186 20.2904C14.0096 21.9442 17.4565 21.1224 17.9624 18.5891C16.8214 18.5721 15.6736 18.5891 14.5326 18.5517C14.5292 17.8691 14.5258 17.19 14.5292 16.5074C16.4377 16.5006 18.3496 16.4972 20.2615 16.5142C20.3735 18.1204 20.1596 19.8252 19.1748 21.1496ZM27.4098 18.2189C26.8393 18.2257 26.2688 18.2291 25.6983 18.2325C25.6915 18.803 25.6881 19.3735 25.6881 19.944H23.98C23.9732 19.3735 23.9732 18.8064 23.9698 18.2359C23.3993 18.2291 22.8288 18.2257 22.2582 18.2189V16.5176C22.8288 16.5108 23.3993 16.5074 23.9698 16.5074C23.9732 15.9369 23.98 15.3664 23.9834 14.7959H25.6881L25.6983 16.5074C26.2688 16.5142 26.8393 16.5142 27.4098 16.5176V18.2189Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-xxl-7">
+                    <div class="row">
+                        <div class="col-md-3 col-6 mb-3 mb-md-0">
+                            <ul class="ps-0">
+                                <li class="text-white fs-18 ff-poppins fw-semibold mb-3 mb-md-4">CUSTOM LINKS</li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins mb-2 mb-md-3">Lorem ipsum</a></li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins ">Lorem ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3 mb-md-0">
+                            <ul class="ps-0">
+                                <li class="text-white fs-18 ff-poppins fw-semibold mb-3 mb-md-4">PRODUCTS</li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins mb-2 mb-md-3">Lorem ipsum</a></li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins mb-2 mb-md-3">Lorem ipsum</a></li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins">Lorem ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3 mb-md-0">
+                            <ul class="ps-0">
+                                <li class="text-white fs-18 ff-poppins fw-semibold mb-3 mb-md-4">OUR COMPANY</li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins mb-2 mb-md-3">Lorem ipsum</a></li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins">Lorem ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3 mb-md-0">
+                            <ul class="ps-0">
+                                <li class="text-white fs-18 ff-poppins fw-semibold mb-3 mb- md-4">YOUR ACCOUNT</li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins mb-2 mb-md-3">Lorem ipsum</a></li>
+                                <li><a href="#" class="white-op7 fw-normal fs-18 ff-poppins">Lorem ipsum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="mb-0 fs-18 fw-normal ff-poppins white-op7 py-4 text-center  bg-gray9">© Copyright SNKRPLTS 2021.</p>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.responsive').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        dots: false,
+                    }
+                },
+                // {
+                //     breakpoint: 480,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1,
+                //     }
+                // }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+    <script>
+        $('.responsive2').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [
+
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        dots: true,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                    }
+                },
+            ]
+        });
+
+
+
+        $('.responsive3').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            rtl: true,
+            responsive: [
+
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        dots: true,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                    }
+                },
+            ]
+        });
+
+    </script>
+
+    <script>
+        function opennav() {
+            document.getElementById("navbar").classList.toggle("end-0");
+            document.body.classList.toggle("overflow_hidden");
+            document.getElementById("menu").classList.toggle("cross")
+        }
+        let counter = 0;
+
+        const counterValue = document.getElementById('value');
+        const incrementBtn = document.getElementById('incre');
+        const decrementBtn = document.getElementById('decre');
+        const resetBtn = document.querySelector('#reset');
+
+        // To increment the value of counter
+        incrementBtn.addEventListener('click', () => {
+            counter++;
+            counterValue.innerHTML = counter;
+        });
+
+        // To decrement the value of counter
+        decrementBtn.addEventListener('click', () => {
+            counter--;
+            counterValue.innerHTML = counter;
+        });
+
+        // // To reset the counter to zero
+        // resetBtn.addEventListener('click', reset);
+
+        // function reset() {
+        //     counter = 0;
+        //     counterValue.innerHTML = counter;
+        // }
+
+
+
+    </script>
+
+</body>
+
+</html>

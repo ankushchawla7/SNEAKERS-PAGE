@@ -1,0 +1,272 @@
+@import url("../css/root.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+#incre,
+#decre {
+    cursor: pointer;
+
+}
+
+.nav-section {
+    border: 1px solid #DEE2E6;
+    background: #FFF;
+    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.10);
+}
+
+.nav-links:active {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+    transition: all 300ms linear;
+}
+
+.text-line-height {
+    line-height: 185.5%;
+}
+
+a {
+    display: inline-block;
+}
+
+.pe-30 {
+    padding-right: 30px !important;
+}
+
+.ps-30 {
+    padding-left: 30px !important;
+}
+
+.q-box {
+    border-radius: 21px;
+    border: 1px solid #E8E8E8;
+    background: rgba(196, 196, 196, 0.00);
+    padding: 10px 23px;
+    line-height: 125%;
+    border: 1px solid #E8E8E8;
+}
+
+.Add-cart {
+    padding: 10px 32px;
+    border-radius: 21px;
+    border: none;
+    line-height: 125%;
+}
+
+.selection {
+    padding: 10px 13px;
+    border-radius: 21px;
+    border: 1px solid #E8E8E8;
+    outline: none;
+}
+
+.col-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.card-box {
+    border-radius: 10px;
+    /* opacity: 0.2; */
+    background: #FFF;
+    box-shadow: 23px 44px 47px 0px rgba(0, 0, 0, 0.20);
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+.img-box {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.best-price-button {
+    padding: 4px 10px;
+    border-radius: 6.533px;
+    border: 0.311px solid #E8E8E8;
+}
+
+.rem-box {
+    padding: 28px 18px 30px 18px;
+}
+
+select {
+    display: block;
+    appearance: none;
+    background-image: url("../images/svg/dropdown-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    outline: none;
+    border-radius: 21px;
+    border: 1px solid #e8e8e8;
+    padding-right: 60px;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+
+.size-button {
+    padding: 8px 32px;
+    border: none;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #FFF;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.tab {
+    cursor: pointer;
+}
+
+.tab::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.tab:hover {
+    color: red !important;
+}
+
+.mx-12 {
+    margin: 0 12px;
+}
+
+.tab:hover::after {
+    width: 100%;
+}
+
+.product-card {
+    border-radius: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #FFF;
+    padding-bottom: 30px;
+}
+
+.img-rad {
+    border-radius: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.page-change {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 3px 5px 22px 0px rgba(0, 0, 0, 0.08);
+}
+
+.page-change:hover {
+    background-color: #FF4400;
+    color: white;
+}
+
+.next-btn {
+    border: 1px solid #555555;
+    padding: 12px 18px;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.next-btn:hover {
+    color: white;
+    background-color: #FF4400;
+    border: none;
+}
+.overflow_hidden{
+    overflow: hidden;
+}
+.color-picker{
+    cursor: pointer;
+}
+
+
+@media (max-width:576px) {
+    .wx_sm-100 {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1400px) {
+    .w-lg-75 {
+        width: 85% !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:992px) {
+    .w-sm-75 {
+        width: 75% !important;
+    }
+}
+
+@media (max-width:991px) {
+    .nav-ul {
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        min-height: 100vh;
+        background-color: white;
+        top: 0;
+        right: -100%;
+        justify-content: center !important;
+        align-items: center;
+        gap: 30px;
+        transition: all 300ms linear;
+        z-index: 1;
+    }
+
+    .cross .line1 {
+        transform: rotate(50deg) translate(16px, 13px);
+    }
+
+    .cross .line2 {
+        /* transform: rotate(50deg) translate(17px, 14px); */
+        opacity: 0;
+    }
+
+    .cross .line3 {
+        transform: rotate(-50deg) translateY(-7%);
+    }
+}
+
+@media (min-width:1400px) {
+    .w-xxl-100 {
+        width: 100%;
+    }
+
+    .pe-xxl-30 {
+        padding-right: 30px !important;
+    }
+
+    .ps-xxl-30 {
+        padding-left: 30px !important;
+    }
+
+}
