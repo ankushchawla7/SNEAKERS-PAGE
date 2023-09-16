@@ -87,7 +87,7 @@ a {
     border-radius: 10px;
     /* opacity: 0.2; */
     background: #FFF;
-    box-shadow: 23px 44px 47px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 23px 44px 47px 0px rgba(0, 0, 0, 0.09);
 }
 
 .opacity-80 {
