@@ -194,6 +194,9 @@ select {
     background-color: white;
     border-radius: 9px;
 }
+.line3-h-125{
+    line-height: 125%;
+}
 
 .next-btn:hover {
     color: white;
